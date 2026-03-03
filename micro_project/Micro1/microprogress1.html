@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Micro Project Progress 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+</head>
+<body>
+    CONCEPT SUMMARY:
+    <p>This interaction, the user presses a key to make a message appear. 
+    At the same time, a system message also appears. 
+    The user's message fades quickly, while the system message is larger and fades more slowly. 
+    This creates a visible imbalance and portrays the user's input as less than the System's response.
+    </p>
+    
+    PRIMARY VARIABLE
+    <p>playerOpacity: the opacity of the player's message.</p>
+    When a key is pressed, playerOpacity becomes 255.
+    In the draw() function, the number slowly decreases.
+    It controls how visible the player's message is. 
+    As the number gets smaller, the message fades away.
+
+    WHAT I BUILT
+
+    <p> week I built a simple system with one variable (playerOpacity) and one input (pressing any key) that have two visible states. 
+    State 1: No key pressed. The screen is empty (or background only). No messages are visible.
+    State 2: Key is pressed. Two messages appear: A small white player message that fades quickly. 
+    A larger red system message that fades slower. The contrast between fading speeds creates the imbalance of visibility and inequality. </p>
+
+    GOALS FOR PROGRESS 2
+    <p> the next state of this project, I could introduce a threshold where repeated key presses cause the system message to multiply or grow larger.
+    I could add time-based decay so the system message lingers even longer each time it is triggered and overlaps with itself, further emphasizing the imbalance. 
+    I could also experiment with different colors or fonts to make the system message more visually dominant compared to the player's message. Before the project is over I want to also edit the HTML page to look more stylized. </p>
+
+
+    PROGRESS SKETCH 
+    <script src="js/p5sketch.js"></script>
+</body>
+</html>
