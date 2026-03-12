@@ -15,7 +15,7 @@ function draw() {
 
     background(30);
 
-    //SYSTEM MESSAGES FILL SCREEN
+    //SYSTEM MESSAGES FILL SCREEN aka PHASE 1
     for (let i = 0; i < systemMessages.length; i++) {
 
       fill(255, 0, 0, systemMessages[i].opacity);
@@ -38,18 +38,16 @@ function draw() {
       playerOpacity -= 10;
     }
 
-    // BREAKTHROUGH WHEN PLAYER SIZE EXCEEDS THRESHOLD (once text grows over 80px)
+    // BREAKTHROUGH MOMENT!! WHEN PLAYER SIZE EXCEEDS THRESHOLD (once text grows over 80px)
     if (playerSize > 80) {
       breakThrough = true;
     }
 
   } else {
-
-   //RUNS ONCE BREAKTHROUGH HAPPENS
+    //RUNS ONCE BREAKTHROUGH HAPPENS
 
     background(220);
-
-    // system still visible but faint (opacity 60)
+     // system still visible but faint (opacity 60)
     for (let i = 0; i < systemMessages.length; i++) {
       fill(255, 0, 0, 60);
       textSize(32);
