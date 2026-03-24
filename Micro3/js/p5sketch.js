@@ -16,7 +16,7 @@ let playerText = "I am trying to speak.";
 
 // PRELOAD AUDIO
 function preload() {
-  crowdSound = loadSound("crowd.mp3"); // your crowd murmur
+  crowdSound = loadSound("crowd.mp3");
 }
 
 

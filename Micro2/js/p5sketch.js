@@ -70,7 +70,7 @@ function keyPressed() {
     // PLAYER GROWS EVERY KEY PRESS (size increases by 3 each key press)
     playerSize += 3;
 
-    // ADD MULTIPLE SYSTEM MESSAGES EACH KEY PRESS RANDOM POSITION
+    // ADDS MULTIPLE SYSTEM MESSAGES EACH KEY PRESS RANDOM POSITION
     for (let i = 0; i < 3; i++) {
 
       let randomX = random(0, width);
