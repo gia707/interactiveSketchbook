@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Audit - Micro Progress 3 </title>
+</head>
+<body>
+    <h1>Interface Audit - Micro Progress 3</h1>
+
+    <h2> Visibility of System Status </h2>
+    <p> There are minimal indicators about system state. At load, the user sees a paragraph explaining the concept and a single instruction: “press any key to try to speak.” 
+        While this establishes the initial action the user can take, it doesn't communicate progression or state changes once interaction begins. 
+        There is no explicit indication of how many key presses have occurred, how close the user is to the “breaking point,” or what the goal is. 
+        The only feedback is indirect: the player text grows and fades, and system messages accumulate. 
+        These changes are perceptible, but not legible to the user as or progression to states. 
+        The transition to the breakthrough moment is abrupt and unexplained structurally. A key weakness here is there is no indicator of progression </p>
+   
+    <h2> Affordances & Signifiers </h2>
+    <p> The page tells the user to press a key, indicating the affordance that will lead to the initial interaction, but The user might not realize that they need to keep pressing a key multiple times.
+        The canvas also looks more like something to watch than something to interact with. There are no buttons or visual hints that encourage continued interaction.
+        When the user presses a key, things will change such as text growing and fading. But it's not obvious that the user is causing all of this since the connection between the user's action (pressing a key) and result (more noise and bigger text) isn't clearly explained.
+        So even though the interaction is working, the page doesn't clearly show how the user's actions are affecting the system.
+    
+    <h2> Navigation & Mapping </h2>
+    <p> There is no navigation or mapping in the traditional sense since this is a single-page experience. 
+        However, there is a lack of clear mapping between user actions and system responses. 
+        The user presses keys, but the resulting changes (text growth, noise increase) are not clearly linked to those actions in a way that helps users understand cause and effect. 
+        The experience relies heavily on users making the connection on their own, which can lead to confusion about how their interactions are influencing the system. 
+        The lack of clear feedback and progression indicators makes it difficult for users to understand how to navigate through the experience or what to expect as they interact. Is it over or should they keep going? When is the end? it's not clear. </p>
+    
+    <h2> Constraints & Assumptions </h2>
+    <p> The page assumes that users will figure out its rules without being told. Specifically, it assumes that users will continue pressing keys even as the experience becomes overwhelming, understand that persistence is required, and recognize that there is a hidden threshold or “breaking point” that they need to reach in order to see the final state.
+    None of these rules are visible. The system lacks visible constraints. It hides the constraints, such as the number of presses needed to trigger the breakthrough, which is intentional since I wanted to create a feeling of uncertainty that mirrors the experience of anxiety in trying to be heard. This forces users to rely on trial and error.
+    Another assumption is that users will interpret the increasing noise and crowding as intentional, rather than as a glitch or malfunction. This may not always be the case. They might even just stop before since they don't know how much they need to press. No one wants to feel like they're stuck in a arduous experience without any indication of how close they are to the end.
+    
+    <h2> Heuristic Violations </h2>
+        <h3>Visibility of System Status</h3>
+        <p> The system doesn't show progress clearly. Users can see changes like text growing and more messages, but they don't know what those changes mean or how close they are to the breakthrough moment.
+        Something I could do to fix this is add something simple like a progress indicator or stages so the user know they are moving forward in the interaction. </p>
+        <h3>Match Between System and Real World</h3>
+        <p> The cause-and-effect is confusing. Pressing a key both helps and hurts the user when text grows but noise also increases. 
+        This mixed feedback can make it hard for users to understand how their actions are influencing the system,  ut this is intentional to create a sense of overload and to convey the concept of my project. </p>
+    
+    <h2> Structural Revision Proposal </h2>
+        <h3>Hierarchy</h3>
+        <p> Maybe I can center the sketch more on the page and make it larger so it's more visually dominant. The instructions and concept explanation could be smaller and placed above or below the sketch to create a clearer visual hierarchy. 
+        This would help users focus on the interaction while still providing context. </p>
+        <h3>Interaction Flow</h3>
+        <p> To make the interaction flow more intuitively I could add a clear starting point instead of a blank canvas. For example, I could have a message that implies the user needs to keep pressing keys, such as "sometimes the most effective way to communicate is through persistence." 
+        This would encourage users to continue interacting and set expectations for what they need to do.</p>
+        <h3>State Visibility & Clarity</h3>
+        <p> Another way to improve the structure is to show progress in some way by making a visible counter like messages of encouragement appearing when certain thresholds are reached, to encourage progress in the form of a visual cue. 
+        It'd also act as a metaphor for positive reinforcement, which is that when people are given support and kindness, it can help them feel more confident and brave.
+        I could also include a message at the end, like an end screen that explains why your voice and efforts matter so they can reflect on the experience after it ends. 
+        These changes would help balance the need for clarity with the desire to create a meaningful experience. </p>
+</body>
+</html>
