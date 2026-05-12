@@ -22,7 +22,9 @@ function preload() {
 
 // SETUP
 function setup() {
-  createCanvas(1200, 800);
+  let canvas =
+  createCanvas(windowWidth, windowHeight);
+  canvas.parent("canvas-container");
   textAlign(CENTER, CENTER);
   background(30);
 
@@ -119,7 +121,24 @@ function draw() {
   }
 }
 
+function touchStarted() {
 
+  keyPressed();
+
+  return false;
+
+}
+function mousePressed() {
+
+  keyPressed();
+
+}
+
+function windowResized() {
+
+  resizeCanvas(windowWidth, windowHeight);
+
+}
 // KEY PRESSED
 function keyPressed() {
   if (!breakThrough) {
