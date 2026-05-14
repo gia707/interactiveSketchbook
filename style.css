@@ -1,0 +1,339 @@
+/* BODY */
+
+body {
+
+    margin: 0;
+
+    background: rgb(220,220,220);
+
+    font-family: "Jersey 10", sans-serif;
+
+}
+
+
+/* TOP BAR */
+
+.topbar {
+
+    background: rgb(45, 94, 227);
+
+    color: white;
+
+    height: 100px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+
+}
+
+.topbar h1 {
+
+    font-size: 55px;
+
+    font-weight: normal;
+
+}
+
+
+/* MENU BUTTON */
+
+#menuButton {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 50px;
+
+    cursor: pointer;
+
+}
+
+
+/* SIDE MENU */
+
+#sideMenu {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: 250px;
+
+    height: 100%;
+
+    background: rgb(45,95,230);
+
+    padding: 20px;
+
+    display: none;
+
+    overflow-y: auto;
+
+}
+
+
+/* SIDE MENU TITLES */
+
+#sideMenu h2 {
+
+    color: white;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+}
+
+
+/* SIDE MENU LINKS */
+
+#sideMenu a {
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+
+    font-size: 22px;
+
+}
+
+
+/* HERO IMAGE */
+
+.hero {
+
+    width: 100%;
+    height: 450px;
+
+    background: rgb(210,210,210);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* HERO IMAGE */
+
+.hero img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+/* MAIN CONTENT */
+
+.content {
+
+    background: rgb(220,235,240);
+
+    padding: 50px;
+
+}
+
+
+/* SECTION TITLES */
+
+.content h2 {
+
+    font-size: 50px;
+
+    margin-top: 80px;
+
+    margin-bottom: 30px;
+
+    font-weight: normal;
+
+}
+
+
+/* GRID */
+
+.grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 50px;
+
+}
+
+
+/* ICON LINKS */
+
+.icon {
+
+    text-decoration: none;
+
+    color: black;
+
+    width: 120px;
+
+}
+
+
+/* ICON IMAGES */
+
+.icon img {
+
+    width: 100%;
+
+}
+
+
+/* ICON TEXT */
+
+.icon p {
+
+    font-size: 30px;
+
+    margin-top: 10px;
+
+}
+
+
+/* HOVER EFFECT */
+
+.icon:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px) {
+
+
+    /* TOP BAR */
+
+    .topbar {
+
+        height: 70px;
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+    .topbar h1 {
+
+        font-size: 28px;
+
+    }
+
+    #menuButton {
+
+        font-size: 35px;
+
+    }
+
+
+    /* SIDE MENU */
+
+    #sideMenu {
+
+        width: 200px;
+
+    }
+
+    #sideMenu h2 {
+
+        font-size: 22px;
+
+    }
+
+    #sideMenu a {
+
+        font-size: 18px;
+
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        height: 250px;
+
+    }
+
+    .cat {
+
+        width: 150px;
+
+    }
+
+
+    /* CONTENT */
+
+    .content {
+
+        padding: 20px;
+
+    }
+
+    .content h2 {
+
+        font-size: 35px;
+
+        margin-top: 50px;
+
+    }
+
+
+    /* GRID */
+
+    .grid {
+
+        gap: 25px;
+
+    }
+
+
+    /* ICONS */
+
+    .icon {
+
+        width: 80px;
+
+    }
+
+    .icon p {
+
+        font-size: 20px;
+
+    }
+
+}

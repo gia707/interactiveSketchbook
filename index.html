@@ -3,39 +3,335 @@
 <head>
     <meta charset="utf-8">
     <title>Interaction Sketchbook</title>
-       <!-- p5 core -->
+
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+    
+    <!-- p5 core -->
 <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 <!-- p5 sketch -->
 <script src="js/p5Sketch.js"></script>
 </head>
-<body>
- 
-<h1> My Interactive Sketchbook</h1>
 
-<a href="number1/number1.html">sketch 1</a>
-<a href="number2/number2.html">sketch 2</a>
-<a href="number3/number3.html">sketch 3</a>
-<a href="number4/number4.html">sketch 4</a>
-<a href="number5/number5.html">sketch 5</a>
-<a href="number6/number6.html">sketch 6</a>
-<a href="number7/number7.html">sketch 7</a>
-<a href="number8/number8.html">sketch 8</a>
-<a href="number9/number9.html">sketch 9</a>
-<a href="micro-ideas/microIdeas.html">Micro Ideas</a>
-<a href="system-sketches/sketches.html">System Sketches</a>
-<a href="Micro1/microprogress1.html">Micro Project Progress 1</a>
-<a href="Micro2/microprogress2.html">Micro Project Progress 2</a>
-<a href="Micro3/mpfinal.html">Micro Project Final Iteration</a>
-<a href="self-assessment/self-assessment.html">Self-Assessment</a>
-<a href="Reading1/reading1.html">Reading Reflection 1</a>
-<a href="Reading2/reading2.html">Reading Reflection 2</a>
-<a href="Reading3/reading3.html">Reading Reflection 3</a>
-<a href="interface-audit/interface-audit.html">Interface Audit</a>
-<a href="interface/i_proto1.html">Interface System Prototype 1</a>
-<a href="interface/i_proto2.html">Interface System Prototype 2</a>
-<a href="interface/i_proto3.html">Interface System Prototype Final</a>
-<a href="interface/statement.html">Interface System Statement</a>
-<a href="interface/intSelfAssessment.html">Interface System Self-Assessment</a>
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+    <h1>gianna’s interactive sketchbook</h1>
+
+    <button id="menuButton">☰</button>
+
+</div>
+
+
+
+<!-- SIDE MENU -->
+
+<div id="sideMenu">
+
+    <h2>HOME</h2>
+
+
+    <h2>SKETCHES</h2>
+
+    <a href="number1/number1.html">sketch 1</a>
+
+    <a href="number2/number2.html">sketch 2</a>
+
+    <a href="number3/number3.html">sketch 3</a>
+
+    <a href="number4/number4.html">sketch 4</a>
+
+    <a href="number5/number5.html">sketch 5</a>
+
+    <a href="number6/number6.html">sketch 6</a>
+
+    <a href="number7/number7.html">sketch 7</a>
+
+    <a href="number8/number8.html">sketch 8</a>
+
+    <a href="number9/number9.html">sketch 9</a>
+
+
+
+    <h2>MICRO PROJECT</h2>
+
+    <a href="micro-ideas/microIdeas.html">Micro Ideas</a>
+
+    <a href="system-sketches/sketches.html">System Sketches</a>
+
+    <a href="Micro1/microprogress1.html">
+        Micro Project Progress 1
+    </a>
+
+    <a href="Micro2/microprogress2.html">
+        Micro Project Progress 2
+    </a>
+
+    <a href="Micro3/mpfinal.html">
+        Micro Project Final Iteration
+    </a>
+
+    <a href="self-assessment/self-assessment.html">
+        Self Assessment
+    </a>
+
+
+
+    <h2>READING REFLECTIONS</h2>
+
+    <a href="Reading1/reading1.html">
+        Reading Reflection 1
+    </a>
+
+    <a href="Reading2/reading2.html">
+        Reading Reflection 2
+    </a>
+
+    <a href="Reading3/reading3.html">
+        Reading Reflection 3
+    </a>
+
+
+
+    <h2>UI AND SYSTEMS</h2>
+
+    <a href="interface-audit/interface-audit.html">
+        Interface Audit
+    </a>
+
+    <a href="interface/i_proto1.html">
+        Interface Prototype 1
+    </a>
+
+    <a href="interface/i_proto2.html">
+        Interface Prototype 2
+    </a>
+
+    <a href="interface/i_proto3.html">
+        Interface Prototype Final
+    </a>
+
+    <a href="interface/statement.html">
+        Interface Statement
+    </a>
+
+    <a href="interface/intSelfAssessment.html">
+        Interface Self Assessment
+    </a>
+
+</div>
+
+
+<!-- HERO IMAGE -->
+
+<div class="hero">
+
+    <img src="images/bruce_bg.jpg">
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="content">
+
+
+    <!-- SKETCHES -->
+
+    <h2>SKETCHES</h2>
+
+    <div class="grid">
+
+        <a href="number1/number1.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 1</p>
+        </a>
+
+        <a href="number2/number2.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 2</p>
+        </a>
+
+        <a href="number3/number3.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 3</p>
+        </a>
+
+        <a href="number4/number4.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 4</p>
+        </a>
+
+        <a href="number5/number5.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 5</p>
+        </a>
+
+        <a href="number6/number6.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 6</p>
+        </a>
+
+        <a href="number7/number7.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 7</p>
+        </a>
+
+        <a href="number8/number8.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 8</p>
+        </a>
+
+        <a href="number9/number9.html" class="icon">
+            <img src="images/notepad.png">
+            <p>sketch 9</p>
+        </a>
+
+    </div>
+
+
+
+    <!-- MICRO PROJECT -->
+
+    <h2>MICRO PROJECT</h2>
+
+    <div class="grid">
+
+        <a href="micro-ideas/microIdeas.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Micro Ideas</p>
+        </a>
+
+        <a href="system-sketches/sketches.html" class="icon">
+            <img src="images/floppy.png">
+            <p>System Sketches</p>
+        </a>
+
+        <a href="Micro1/microprogress1.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Progress 1</p>
+        </a>
+
+        <a href="Micro2/microprogress2.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Progress 2</p>
+        </a>
+
+        <a href="Micro3/mpfinal.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Final Iteration</p>
+        </a>
+
+        <a href="self-assessment/self-assessment.html" class="icon">
+            <img src="images/clipboard.png">
+            <p>Self Assessment</p>
+        </a>
+
+    </div>
+
+
+
+    <!-- READING REFLECTIONS -->
+
+    <h2>READING REFLECTIONS</h2>
+
+    <div class="grid">
+
+        <a href="Reading1/reading1.html" class="icon">
+            <img src="images/notepad.png">
+            <p>Reflection 1</p>
+        </a>
+
+        <a href="Reading2/reading2.html" class="icon">
+            <img src="images/notepad.png">
+            <p>Reflection 2</p>
+        </a>
+
+        <a href="Reading3/reading3.html" class="icon">
+            <img src="images/notepad.png">
+            <p>Reflection 3</p>
+        </a>
+
+    </div>
+
+
+
+    <!-- UI + SYSTEMS -->
+
+    <h2>UI AND SYSTEMS</h2>
+
+    <div class="grid">
+
+        <a href="interface-audit/interface-audit.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Interface Audit</p>
+        </a>
+
+        <a href="interface/i_proto1.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Prototype 1</p>
+        </a>
+
+        <a href="interface/i_proto2.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Prototype 2</p>
+        </a>
+
+        <a href="interface/i_proto3.html" class="icon">
+            <img src="images/floppy.png">
+            <p>Prototype Final</p>
+        </a>
+
+        <a href="interface/statement.html" class="icon">
+            <img src="images/clipboard.png">
+            <p>Statement</p>
+        </a>
+
+        <a href="interface/intSelfAssessment.html" class="icon">
+            <img src="images/clipboard.png">
+            <p>Self Assessment</p>
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- MENU SCRIPT -->
+
+<script>
+
+let menuButton =
+document.getElementById("menuButton");
+
+let sideMenu =
+document.getElementById("sideMenu");
+
+
+menuButton.onclick = function() {
+
+    if(sideMenu.style.display == "block") {
+
+        sideMenu.style.display = "none";
+
+    } else {
+
+        sideMenu.style.display = "block";
+
+    }
+
+}
+
+</script>
 
 </body>
+
 </html>

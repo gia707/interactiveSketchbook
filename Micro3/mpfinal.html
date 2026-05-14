@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micro Idea Final</title>
 
+    <title>Micro Idea Final</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
+
 <body class="project-page">
 
-  <div class="topbar">
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <h1>micro project final</h1>
 
-    <h1>micro project final</h1>
+        <button id="menuButton">☰</button>
+    </div>
 
-    <button id="infoButton">☰</button>
 
-  </div>
+    <!-- SIDE MENU -->
+    <div id="sideMenu">
+        <a href="../index.html">HOME</a>
+    </div>
 
- <!-- pop up -->
 
-  <div id="popupOverlay">
+    <!-- PROJECT AREA -->
+    <div id="canvas-container">
 
-    <div class="popup">
+        <!-- INFO BUTTON -->
+        <button id="infoButton">
+            <img src="images/info.png" alt="info button">
+        </button>
 
-      <h2>Instructions</h2>
 
-      <h3>
-        press any key, click, or tap to try to speak.
-      </h3>
+        <!-- POPUP -->
+        <div id="popupOverlay">
+            <div class="popup">
+
+                <button id="closePopup">x</button>
+
+                <h2>instructions</h2>
+
+                <p>
+                    press any key, click,<br>
+                    or tap to try to speak.
+                </p>
+
+                <p>
+                    persistence is key.
+                </p>
+
+            </div>
+        </div>
 
     </div>
 
-  </div>
+    <script src="js/p5sketch.js"></script>
 
-  <!-- p5 canvas -->
-
-  <div id="canvas-container"></div>
-
-  <script src="js/p5sketch.js"></script>
 </body>
 </html>
