@@ -36,8 +36,7 @@
 
 <div id="sideMenu">
 
-    <h2>HOME</h2>
-
+    <a href="../index.html"><h2>HOME</h2></a>
 
     <h2>SKETCHES</h2>
 
@@ -75,7 +74,7 @@
         Micro Project Progress 2
     </a>
 
-    <a href="Micro3/mpfinal.html">
+    <a href="Micro3/microprogress3.html">
         Micro Project Final Iteration
     </a>
 
@@ -224,7 +223,7 @@
             <p>Progress 2</p>
         </a>
 
-        <a href="Micro3/mpfinal.html" class="icon">
+        <a href="Micro3/microprogress3.html" class="icon">
             <img src="images/floppy.png">
             <p>Final Iteration</p>
         </a>
@@ -303,31 +302,21 @@
 
 </div>
 
-
-
-<!-- MENU SCRIPT -->
-
+        
 <script>
-
-let menuButton =
-document.getElementById("menuButton");
-
-let sideMenu =
-document.getElementById("sideMenu");
-
+let menuButton = document.getElementById("menuButton");
+let sideMenu = document.getElementById("sideMenu");
 
 menuButton.onclick = function() {
 
-    if(sideMenu.style.display == "block") {
+    if (sideMenu.style.display === "block") {
 
         sideMenu.style.display = "none";
 
     } else {
 
         sideMenu.style.display = "block";
-
-    }
-
+        }
 }
 
 </script>

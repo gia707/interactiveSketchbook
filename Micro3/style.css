@@ -1,0 +1,129 @@
+/* BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(35,35,35);
+    font-family: "Jersey 10", sans-serif;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+.topbar {
+    background: rgb(45, 94, 227);
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.topbar h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+
+#menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#sideMenu {
+
+    position: fixed;
+
+    display: none;
+
+    top: 0;
+
+    right: 0;
+
+    width: 250px;
+
+    height: 100%;
+
+    background: rgb(45,94,227);
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+}
+
+/* SIDE MENU TITLES */
+
+#sideMenu h2 {
+
+    color: white;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+}
+
+
+/* SIDE MENU LINKS */
+
+#sideMenu a {
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+
+    font-size: 22px;
+
+}
+
+/* PROJECT CANVAS */
+
+#canvas-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background: rgb(45,45,45);
+}
+
+/* MOBILE  */
+@media(max-width: 700px) {
+
+    .topbar {
+        height: 70px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .topbar h1 {
+        font-size: 32px;
+    }
+
+    #menuButton {
+        font-size: 38px;
+    }
+
+    #canvas-container {
+        height: calc(100vh - 70px);
+    }
+}

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micro Idea Final</title>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 
 </head>
 
@@ -16,34 +17,42 @@
   <div class="topbar">
 
     <h1>micro project final</h1>
+    <button id="menuButton">☰</button>
+  </div>
 
-    <button id="infoButton">☰</button>
-
+  <div class="instructions">
+    To interact please press any key, tap your screen or mouse click. 
   </div>
 
 
- <!-- pop up -->
-
-  <div id="popupOverlay">
-
-    <div class="popup">
-
-      <h2>Instructions</h2>
-
-      <h3>
-        press any key, click, or tap to try to speak.
-      </h3>
-
+ <!-- SIDE MENU -->
+    <div id="sideMenu">
+      <a href="../index.html">HOME</a>
     </div>
 
-  </div>
+<!-- p5 canvas -->
 
+<div id="canvas-container"></div>
 
-  <!-- p5 canvas -->
+<script src="js/p5sketch.js"></script>
 
-  <div id="canvas-container"></div>
+<script>
+let menuButton = document.getElementById("menuButton");
+let sideMenu = document.getElementById("sideMenu");
 
-  <script src="js/p5sketch.js"></script>
+menuButton.onclick = function() {
 
-</body>
-</html>
+    if (sideMenu.style.display === "block") {
+
+        sideMenu.style.display = "none";
+
+    } else {
+
+        sideMenu.style.display = "block";
+
+    }
+}
+</script>
+
+  </body>
+  </html>
